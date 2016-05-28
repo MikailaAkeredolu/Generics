@@ -49,12 +49,12 @@ public class MyArrayList<T> {
     public T remove(int index) {
 
         Object[] smallArray = new Object[arrayObject.length - 1];
-
-        resizeArray();
+        // resizeArray();
         for (int x = index; x < arrayObject.length - 1; x++) { //check if we need a bigger size
             smallArray[x] = arrayObject[x + 1]; //replacement changing
         }
         arrayObject = smallArray;  // reassign small array to original
+
         return (T) smallArray;
     }
 

@@ -32,6 +32,7 @@ public class MyArrayListTest {
 
     @Test
     public void add1() throws Exception {
+
         MyArrayList<Integer>myList2 = new MyArrayList<Integer>();
         myList2.add(4);
         myList2.add(0,10);
@@ -56,6 +57,7 @@ public class MyArrayListTest {
         myList3.add(4);
         myList3.add(7);
         myList3.remove(0);
+
         int expectedValue = 7;
         int actualValue = myList3.get(0);
         Assert.assertEquals(expectedValue,actualValue);
