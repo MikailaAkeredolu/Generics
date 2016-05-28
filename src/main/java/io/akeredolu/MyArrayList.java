@@ -82,7 +82,7 @@ public class MyArrayList<T> {
     //checking if something contains an object
     public boolean contains(Object o) {
         for (int x = 0; x < arrayObject.length; x++) {
-            if (o == arrayObject[x]) {
+            if (o.equals(arrayObject[x])) {
                 return true;
             }
         }
